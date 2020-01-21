@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Open+Sans|Oxygen&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    font-family: Lato;
+    color: #777777;
+}
+
+h2 {
+    font-family: 'Oxygen', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #555555;
+}
+
+/*header*/
+
+ul {
+    font-size: 110%;
+    list-style-type: none;
+    letter-spacing: 4px;
+}
+
+#logo {
+    padding-left: 10px;
+    float: left;
+    font-size: 150%;
+    text-transform: uppercase;
+}
+
+#logo,
+#menu {
+    line-height: 55px;
+}
+
+nav li {
+    float: right;
+    margin-right: 30px;
+}
+
+nav a {
+    color:#555555;;
+}
+
+nav a:hover {
+    border-bottom: 1px solid #777777;
+}
+
+
+
+/*hero image */
+
+#hero-outer {
+    height: 550px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+#hero-image {
+    height: 550px;
+    width: 100%;
+   background: url(../images/bg-2!!.jpg) no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    
+    animation-name: hero-zoom;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes hero-zoom {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.05);
+    }
+}
+
+#cover-text,
+#cover-text h2 {
+    color: #ffffff;
+}
+
+#cover-text {
+    font-size: 100%;
+    font-family: "Oxygen";
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    width: 600px;
+    height: 200px;
+
+    padding-top: 40px;
+    padding-left: 10px;
+
+    background-color: rgba(241, 109, 107, 0.7);
+
+    top: 150px;
+    left: 120px;
+    position: absolute;
+}
